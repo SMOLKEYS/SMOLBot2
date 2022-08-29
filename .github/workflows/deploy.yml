@@ -25,5 +25,5 @@ jobs:
        
      - name: Run
        run: |
-         echo '{"TOKEN": "${{ secrets.LOGIN }}"}' >> token.json
+         echo '{"TOKEN": "${{ secrets.TOKEN }}"}' >> token.json
          node init.js
