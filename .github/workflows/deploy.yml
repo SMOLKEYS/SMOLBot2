@@ -1,0 +1,29 @@
+name: Bot initialize
+
+on:
+  workflow_dispatch:
+    inputs:
+      manual_start:
+        description: "Manual startup"
+        required: false
+  schedule:
+    - cron: '4 0,2,4,6,8,10,12,14,16,18,20,22 * * *'
+
+jobs:
+  run_bot:
+    name: "Start the bot"
+    runs-on: ubuntu-latest
+
+    steps:
+     - name: Checkout
+       uses: actions/checkout@v2
+
+     - name: Python setup
+       uses: actions/setup-python@v2
+       with:
+         python-version: "3.x"
+       
+     - name: Run
+       run: |
+         echo '{"TOKEN": "${{ secrets.LOGIN }}"}' >> token.json
+         node init.js

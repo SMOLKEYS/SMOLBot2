@@ -1,0 +1,28 @@
+{
+  "name": "smolbot",
+  "version": "1.0.0",
+  "description": "A minimalistic bot.",
+  "main": "init.js",
+  "scripts": {
+    "test": "a"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SMOLKEYS/smolbot.git"
+  },
+  "author": "SMOLKEYS",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/SMOLKEYS/smolbot/issues"
+  },
+  "homepage": "https://github.com/SMOLKEYS/smolbot#readme",
+  "dependencies": {
+    "discord-module": "^2.0.17",
+    "discord.js": "^13.6.0",
+    "github-url-to-object": "^4.0.6",
+    "nhentai-js": "^4.0.0",
+    "node-bash": "^5.0.1",
+    "node-fetch": "^2.6.7",
+    "porny": "^1.0.0"
+  }
+}
